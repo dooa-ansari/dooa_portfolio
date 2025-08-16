@@ -81,7 +81,7 @@ const Rain: React.FC = () => {
             lastUpdateRef.current = now;
 
             setRaindrops(prev => {
-                let updated = prev.map(drop => {
+                const updated = prev.map(drop => {
                     const dragForce = drop.vy * drop.vy * AIR_RESISTANCE * 0.001;
                     const netAcceleration = GRAVITY - dragForce;
                     drop.vy = Math.min(drop.vy + netAcceleration * deltaTime, TERMINAL_VELOCITY);
