@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-
+import type { Raindrop, Dimensions } from '@/types/rain_t';
 
 const Rain: React.FC = () => {
     const [raindrops, setRaindrops] = useState<Raindrop[]>([]);

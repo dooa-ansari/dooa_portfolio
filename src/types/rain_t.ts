@@ -1,4 +1,4 @@
-interface Raindrop {
+export interface Raindrop {
     id: number;
     x: number;
     y: number;
@@ -10,7 +10,7 @@ interface Raindrop {
     width: number;
 }
 
-interface Dimensions {
+export interface Dimensions {
     width: number;
     height: number;
 }
